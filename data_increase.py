@@ -35,7 +35,7 @@ def increase(face_dir_id):
         count += 1
 
         for batch in data_aug_gen.flow(x, batch_size=1, save_to_dir='./Train/' + face_id,
-                                       save_prefix=face_id + ' INC' + str(count), save_format='png'):
+                                       save_prefix=face_id + '_' + str(count), save_format='png'):
             i += 1
             if i > 20:
                 break
