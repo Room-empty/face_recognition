@@ -7,7 +7,7 @@ np.random.seed(5)
 
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 
-# 데이터셋 불러오기
+# dataset 불러오기
 def increase(face_dir_id):
     data_aug_gen = ImageDataGenerator(rescale=1. / 255,
                                       rotation_range=15,
