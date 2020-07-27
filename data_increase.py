@@ -21,7 +21,7 @@ def increase(face_dir_id):
 
     face_id = face_dir_id
     # face_id = input('\n enter user id end press <return> ==>  ')
-    dir = './Train/' + face_id
+    dir = './face_image/' + face_id
     pathList = glob.glob("%s/*.png" % (dir))
 
     count = 0

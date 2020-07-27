@@ -2,7 +2,7 @@ from PIL import Image
 import os, glob, numpy as np
 from sklearn.model_selection import train_test_split
 
-Trian_dir = "./Train"
+face_image_dir = "./face_image"
 
 def labeling():
     categories = os.listdir(Trian_dir)
@@ -24,7 +24,7 @@ def labeling():
         label = [0 for i in range(nb_classes)]
         label[idx] = 1
 
-        image_dir = Trian_dir + "/" + cat  # cat 아님 category의 cat
+        face_image_dir = Trian_dir + "/" + cat  # cat 아님 category의 cat
         files = glob.glob(image_dir + "/*.png")
         print(cat, " 파일 길이 : ", len(files))
         for i, f in enumerate(files):
